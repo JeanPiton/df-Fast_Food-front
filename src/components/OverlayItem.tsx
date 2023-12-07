@@ -15,10 +15,11 @@ type MenuItem = {
     typeLength: number,
     order: any,
     funcOverlay: any,
-    funcOrder:any
+    funcOrder:any,
+    funcFinish:any
 }
 
-export default function OverlayItem({data, typeLength, order, funcOverlay, funcOrder}:MenuItem){
+export default function OverlayItem({data, typeLength, order, funcOverlay, funcOrder, funcFinish}:MenuItem){
     const [quantity,setQuantity] = useState(1)
     const [extra,setExtra] = useState([])
     const [obs,setObs] = useState('')
@@ -67,7 +68,7 @@ export default function OverlayItem({data, typeLength, order, funcOverlay, funcO
         createOrder()
         cleanStates()
         funcOverlay()
-        if(end) console.log("end")
+        if(end) funcFinish(true)
     }
     
     if(data!=undefined) return(

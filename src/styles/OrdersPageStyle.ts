@@ -54,5 +54,38 @@ export const ProdArea = styled.div`
 `;
 
 export const OrderArea = styled.div`
+    margin-top: 20px;
+`;
 
+export const ButtonArea = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+
+    button{
+        padding: 10px 60px;
+        border-style: solid;
+        border-radius: 12px;
+        border-color: #2B5C14;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    button:disabled{
+        border-color: #adadad;
+    }
+    .cancel{
+        color: #2B5C14;
+        background-color: white;
+    }
+    .cancel:disabled{
+        color: #adadad;
+    }
+    .finish{
+        color: white;
+        background-color: #2B5C14;
+    }
+    .finish:disabled{
+        background-color: #adadad;
+    }
 `;
