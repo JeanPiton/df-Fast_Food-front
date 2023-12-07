@@ -1,11 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-import CategoryButton from "../components/CategoryButton";
-import MenuItem from "../components/MenuItem";
-import OrderList from "../components/OrderList";
-import OverlayItem from "../components/OverlayItem";
-import PaymentPage from "../components/PaymentPage";
+import CategoryButton from "../components/Order/CategoryButton";
+import MenuItem from "../components/Order/MenuItem";
+import OrderList from "../components/Order/OrderList";
+import OverlayItem from "../components/Order/OverlayItem";
+import PaymentPage from "../components/Order/PaymentPage";
 import { ButtonArea, Header, OrderArea, PageContainer, ProdArea, Search, Session, TitleArea, Welcome } from "../styles/OrdersPageStyle";
 
 export default function OrdersPage(){
@@ -23,7 +23,7 @@ export default function OrdersPage(){
             const menuItems: MenuItemData[] = resp[1].data
             setTypes(type)
             setMenu(menuItems)
-        }).catch(error => {
+        }).catch(() => {
             Swal.fire({
                 icon: "error",
                 title: "Ocorreu um erro"

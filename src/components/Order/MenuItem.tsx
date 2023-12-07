@@ -2,7 +2,7 @@ import { IonIcon } from "@ionic/react";
 import { checkmarkSharp } from "ionicons/icons";
 import { useState } from "react";
 import styled from "styled-components";
-import backImage from "../assets/food_background.jpg";
+import backImage from "../../assets/food_background.jpg";
 
 type MenuItem = {
     data: MenuItemData,

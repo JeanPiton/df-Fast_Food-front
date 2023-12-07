@@ -2,6 +2,7 @@ import Icon from "../assets/hamburger.png";
 import { Container, Logo, Pages } from "../styles/NavbarStyle";
 import PageOption from "./PageOption";
 
+
 export default function Navbar(){
 
     return (
