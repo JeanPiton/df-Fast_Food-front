@@ -1,7 +1,7 @@
 import { IonIcon } from "@ionic/react";
 import { addCircleSharp, closeSharp, removeCircleSharp } from "ionicons/icons";
 import { useEffect, useState } from "react";
-import { ButtonDiv, DescDiv, ExtraDiv, ObservationDiv, Overlay, PageContainer, PriceDiv, ProdDiv, QuantityRegulator, TitleDiv } from "../styles/OverlayItemStyle";
+import { ButtonDiv, DescDiv, ExtraDiv, ObservationDiv, Overlay, PageContainer, PriceDiv, ProdDiv, QuantityRegulator, TitleDiv } from "../../styles/OverlayItemStyle";
 import ExtraItem from "./ExtraItem";
 import MenuItem from "./MenuItem";
 import OrderList from "./OrderList";

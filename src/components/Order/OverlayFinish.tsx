@@ -1,8 +1,8 @@
 import { IonIcon } from "@ionic/react";
 import { closeSharp } from "ionicons/icons";
 import styled from "styled-components";
-import finishOrder from "../assets/finishOrder.png";
-import { Overlay } from "../styles/OverlayItemStyle";
+import finishOrder from "../../assets/finishOrder.png";
+import { Overlay } from "../../styles/OverlayItemStyle";
 
 export default function OverlayFinish(){
 
