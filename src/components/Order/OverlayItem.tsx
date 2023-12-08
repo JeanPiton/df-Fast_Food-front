@@ -59,7 +59,8 @@ export default function OverlayItem({data, typeLength, order, funcOverlay, funcO
             typeId: data.typeId,
             price: data.price,
             extra: extra,
-            itemTotalPrice: totalWextra
+            itemTotalPrice: totalWextra,
+            Observation: obs
         }
         funcOrder([newOrder,...order])
     }
