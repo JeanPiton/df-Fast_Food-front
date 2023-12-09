@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+# Fast_Food
+Aplicação front-end para o desafio técnico da vaga full stack da Devio.
+Nesta aplicação é possível criar e gerenciar pedidos. <a href="https://df-fast-food-front.vercel.app/">Demo</a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Funcionalidade
+Este projeto é um site que disponibiliza um cardápio, realiza a compra dos itens, gerencia e mostra o andamento dos pedidos 
 
-Currently, two official plugins are available:
+# Tecnologias utilizadas
+Para este projeto, foram utilizadas: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node (versão 16.17.0)
+- Axios
+- React
+- React-dom
+- Styled-components
+- Sweetalerts2
+- Eslint
+- Vite
+- Typescript
+- Ionicons
 
-## Expanding the ESLint configuration
+# Como rodar
+Para executar este projeto em desenvolvimento, é necessário seguir os passos abaixo:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Clonar o repositório;
+- Baixar as dependências necessárias com o comando: `npm install`;
+- Em seguida, criar o arquivo `.env` com base no `.env.example`;
+- Para rodar o projeto em desenvolvimento, execute o comando `npm run dev`;
